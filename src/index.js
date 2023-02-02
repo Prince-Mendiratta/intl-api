@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import "./styles.css";
+import IntlPolyfill from "intl";
+import "intl/locale-data/jsonp/en.js";
+
+Intl.NumberFormat = IntlPolyfill.NumberFormat;
 
 function App() {
     return (
